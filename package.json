@@ -1,0 +1,22 @@
+{
+  "name": "codeship",
+  "version": "0.0.1",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benlynchnz/codeship.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benlynchnz/codeship/issues"
+  },
+  "homepage": "https://github.com/benlynchnz/codeship#readme",
+  "dependencies": {
+    "moment": "^2.10.6"
+  }
+}
