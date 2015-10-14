@@ -20,8 +20,7 @@
     "moment": "^2.10.6"
   },
   "devDependencies": {
-    "aws-sdk": "^2.2.6",
     "gulp": "^3.9.0",
-    "gulp-s3": "^0.3.0"
+    "gulp-awspublish": "^3.0.1"
   }
 }
