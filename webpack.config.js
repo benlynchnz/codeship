@@ -31,7 +31,7 @@ module.exports = {
   },
 
   postcss: [
-    require("autoprefixer-core"),
+    require("autoprefixer"),
     require("postcss-color-rebeccapurple")
   ],
 
