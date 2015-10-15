@@ -61,7 +61,7 @@ gulp.task("server", function(done) {
   ).listen(3000, done);
 });
 
-gulp.task("build", ["webpack"]);
+gulp.task("build", ["html", "webpack"]);
 
 gulp.task("watch", [ "server" ], function() {
   //livereload.listen({ basePath: "dist" });
