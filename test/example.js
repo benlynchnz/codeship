@@ -14,7 +14,7 @@ let assert = chai.assert,
 
 describe('Load Page', function() {
 
-	this.timeout(99999990);
+	this.timeout(5000);
 
 	before((done) => {
 		client.init(done);
