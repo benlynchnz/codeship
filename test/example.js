@@ -22,7 +22,7 @@ describe('Load Page', function() {
 
 	it('Title Should be Codeship', (done) => {
 		client
-      .url("http://jude-io-codeship.s3-website-ap-southeast-2.amazonaws.com/")
+      .url("http://localhost:3000")
 			.getTitle().then((title) => {
 				expect(title).to.equal("Codeship")
 			})
