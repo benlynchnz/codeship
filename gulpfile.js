@@ -21,7 +21,10 @@ gulp.task("deploy", function() {
 	var headers = {
     'Cache-Control': 'max-age=0, no-transform, public',
 		'Metadata' : {
-			"version": config.version
+			"commit": process.env.CI_COMMIT_ID,
+			"build_url": process.env.CI_BUILD_URL,
+			"build_number": process.env.CI_BUILD_NUMBER,
+			"committer_name": process.env.CI_COMMITTER_NAME
 		}
   };
 

@@ -38,7 +38,7 @@ describe('Load Page', function() {
 		client
 			.getText("#main", (err, text) => {
         expect(err).to.be.undefined;
-        expect(text).to.equal("Foo");
+        expect(text).to.equal("Foo bar");
       })
 			.call(done);
 	});
