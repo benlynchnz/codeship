@@ -22,9 +22,12 @@ gulp.task("deploy", function() {
     'Cache-Control': 'max-age=0, no-transform, public',
 		'Metadata' : {
 			"commit": process.env.CI_COMMIT_ID,
-			"build_url": process.env.CI_BUILD_URL,
-			"build_number": process.env.CI_BUILD_NUMBER,
-			"committer_name": process.env.CI_COMMITTER_NAME
+			"build-url": process.env.CI_BUILD_URL,
+			"build-number": process.env.CI_BUILD_NUMBER,
+			"committer-name": process.env.CI_COMMITTER_NAME,
+			"committer-email": process.env.CI_COMMITTER_EMAIL,
+			"committer-username": process.env.CI_COMMITTER_USER,
+			"message": process.env.CI_MESSAGE
 		}
   };
 
