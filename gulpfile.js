@@ -26,7 +26,7 @@ gulp.task("deploy", function() {
 			"build-number": process.env.CI_BUILD_NUMBER,
 			"committer-name": process.env.CI_COMMITTER_NAME,
 			"committer-email": process.env.CI_COMMITTER_EMAIL,
-			"committer-username": process.env.CI_COMMITTER_USER,
+			"committer-username": process.env.CI_COMMITTER_USERNAME,
 			"message": process.env.CI_MESSAGE
 		}
   };
