@@ -1,5 +1,10 @@
 import webdriverio from 'webdriverio';
 import chai from 'chai';
+import http from 'http';
+import path from "path";
+import server from "../server";
+
+
 
 let options = {
 	desiredCapabilities: {
@@ -18,6 +23,13 @@ describe('Load Page', function() {
 
 	before((done) => {
 		client.init(done);
+	});
+
+	var app = server();
+
+	http.get("http://localhost:3000", function (res) {
+			assert.equal(res.statusCode, 200);
+			// done();
 	});
 
 	it('Title Should be Codeship', (done) => {
