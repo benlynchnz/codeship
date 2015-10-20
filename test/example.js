@@ -5,7 +5,6 @@ import path from "path";
 import server from "../server";
 
 
-
 let options = {
 	desiredCapabilities: {
 		browserName: 'chrome'
@@ -22,14 +21,8 @@ describe('Load Page', function() {
 	this.timeout(5000);
 
 	before((done) => {
+		const app = server();
 		client.init(done);
-	});
-
-	var app = server();
-
-	http.get("http://localhost:3000", function (res) {
-			assert.equal(res.statusCode, 200);
-			// done();
 	});
 
 	it('Title Should be Codeship', (done) => {
@@ -44,8 +37,8 @@ describe('Load Page', function() {
 	it('Should have text Foo', (done) => {
 		client
 			.getText("#main", (err, text) => {
-        // expect(err)to.be.undefined;
-        expect(text).to.equal("Foo")
+        expect(err).to.be.undefined;
+        expect(text).to.equal("Foo");
       })
 			.call(done);
 	});
